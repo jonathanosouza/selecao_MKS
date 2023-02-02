@@ -8,7 +8,7 @@ export interface products {
   description: string,
   photo: string,
   quantity: number,
-  price: number
+  price: string
 }
 
 export interface purchase {
