@@ -11,7 +11,7 @@ export interface products {
   description: string,
   photo: string,
   quantity: number
-  price: string
+  price: number
 }
 
 interface ProductsProps {
