@@ -29,7 +29,7 @@ export function CardProducts({ products }: ProductsProps) {
         <InfoProduct>
           <h1>{products.name}</h1>
           <TagContainer>
-            {new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(products.price as any)}
+            {new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(products.price as number)}
           </TagContainer>
         </InfoProduct>
         <p>{products.description}</p>
