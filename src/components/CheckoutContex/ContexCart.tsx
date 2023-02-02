@@ -11,17 +11,6 @@ export interface products {
   price: string
 }
 
-export interface purchase {
-  cep: string
-  addressroad: string
-  addressnumber: string
-  addresscomplement: string
-  addressdistrict: string
-  addressstate: string
-  cartitem: []
-  payment: string
-}
-
 export interface cartItem extends products {
   quantity: number
 }
@@ -29,9 +18,7 @@ export interface cartItem extends products {
 interface ProductsProps {
   products: products[]
   cartItem: cartItem[]
-  datapurchase: purchase[]
   quantity: number
-  setDataPurchase: any
   setIsOpen: any
   modalIsOpen: boolean
   handleAddToCart: (id: number) => void
@@ -52,7 +39,6 @@ export const CartProvider = ({ children }: ProductsPropsProviderProps) => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [cartItem, setCartItem] = useState<cartItem[]>([])
   const [products, setProducts] = useState<products[]>([])
-  const [datapurchase, setDataPurchase] = useState<purchase[]>([])
   const [quantity, setQuantity] = useState(1)
   const [loading, setLoading] = useState(true)
 
@@ -139,8 +125,6 @@ export const CartProvider = ({ children }: ProductsPropsProviderProps) => {
         handleDecrementToCart,
         handleDeleteToCart,
         handleIncrementToCart,
-        datapurchase,
-        setDataPurchase,
         quantity,
         loading
       }}>{children}

@@ -1,10 +1,8 @@
 import { Minus, Plus, Trash } from "phosphor-react";
 import { PriceContainer } from "../CardProducts/CardProduct";
 import { AddOrRemoveContainter, AddToCartChekout, RemoveToCartChekout, SelectedCoffeContainer, SelectedCoffee, TotalConfirmed } from "./CardProductAddCartStyles";
-import imgcoffe from './../../assets/Coffee.png';
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { AddToCartContex, CartProvider } from "../CheckoutContex/ContexCart";
-import { LineDiv } from "../../pages/Checkout/CheckoutStyles";
 
 export function CardCoffeeAddCart() {
 
