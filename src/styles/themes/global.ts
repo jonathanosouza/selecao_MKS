@@ -37,7 +37,7 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
   justify-content: center;
   align-items:center;
-  margin-right:8rem  }
+  margin-right:12rem  }
 }
 
  @media only screen 
