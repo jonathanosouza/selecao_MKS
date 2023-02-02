@@ -6,7 +6,7 @@ import { MyLoader } from "../../components/Skeleton/Skeleton";
 import { CardProducts } from '../../components/CardProducts/CardProducts'
 
 export function Home() {
-  const { products, loading, setLoading } = useContext(AddToCartContex)
+  const { products, loading } = useContext(AddToCartContex)
   return (
     <div>
       <MeunProducts>

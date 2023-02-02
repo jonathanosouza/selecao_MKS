@@ -39,7 +39,6 @@ interface ProductsProps {
   handleIncrementToCart: (id: number) => void
   handleDeleteToCart: (id: number) => void
   openModal: () => void
-  setLoading: boolean
   closeModal: () => void
   loading: boolean
 
@@ -144,8 +143,8 @@ export const CartProvider = ({ children }: ProductsPropsProviderProps) => {
         datapurchase,
         setDataPurchase,
         quantity,
-        loading,
-        setLoading
+        loading
+
 
       }}>{children}
     </AddToCartContex.Provider>
