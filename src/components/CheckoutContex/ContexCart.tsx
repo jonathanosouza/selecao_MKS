@@ -39,7 +39,7 @@ interface ProductsProps {
   handleIncrementToCart: (id: number) => void
   handleDeleteToCart: (id: number) => void
   openModal: () => void
-  setLoading: () => void
+  setLoading: boolean
   closeModal: () => void
   loading: boolean
 
