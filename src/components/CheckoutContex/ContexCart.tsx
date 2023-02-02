@@ -41,7 +41,6 @@ interface ProductsProps {
   openModal: () => void
   closeModal: () => void
   loading: boolean
-
 }
 
 interface ProductsPropsProviderProps {
@@ -144,8 +143,6 @@ export const CartProvider = ({ children }: ProductsPropsProviderProps) => {
         setDataPurchase,
         quantity,
         loading
-
-
       }}>{children}
     </AddToCartContex.Provider>
   );

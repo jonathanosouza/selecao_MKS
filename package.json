@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "server": "json-server server.json -p 4444 -w"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
