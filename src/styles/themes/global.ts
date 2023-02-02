@@ -2,7 +2,6 @@ import {createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   * {
-   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,18 +25,29 @@ export const GlobalStyle = createGlobalStyle`
     and (device-width: 428px) 
     and (device-height: 926px) 
     and (-webkit-device-pixel-ratio: 3) { 
-      body {
+  body {
     display: flex;
   justify-content: center;
   align-items:center;
   margin-right:8rem  }
  }
 
-@media only screen
-and (width: 390px) 
-and (-webkit-device-pixel-ratio: 3) { 
-
+ @media screen and (max-device-width: 480px) {
+  body {
+    display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-right:8rem  }
 }
 
-
-  `
+ @media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+  body {
+    display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-right:8rem  }
+ }
+`
